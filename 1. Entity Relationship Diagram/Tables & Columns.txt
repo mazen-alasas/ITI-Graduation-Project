@@ -1,0 +1,114 @@
+1. City :
+   - CityID
+   - CityName_AR
+   - CityName_EN
+
+2. DeliveryZone :
+
+   - ZoneID
+   - ZoneName_AR
+   - ZoneName_EN
+   - TrafficFactor
+   - BaseDeliveryMinutes
+   - MinOrderForDelivery
+   - DeliveryFee
+
+3. Competitor :
+
+   - CompetitorID
+   - CompetitorName_AR
+   - CompetitorName_EN
+   - HasDelivery
+   - DeliveryPlatformsUsed
+   - AverageDeliveryMinutes
+   - GoogleMapsRating
+
+4. DeliveryPlatform :
+
+   - PlatformID
+   - PlatformName_AR
+   - PlatformName_EN
+   - CommissionRateDefault
+   - HasCODSupport
+   - HasWalletPayment
+   - AvgDeliveryFee_EGP
+   - IsNegotiable
+
+5. Customer :
+
+   - CustomerID
+   - FullName_AR
+   - FullName_EN
+   - PhoneNumber
+   - Gender
+   - FirstOrderDate
+
+6. Orders :
+
+   - OrderID
+   - OrderDate
+   - OrderTime
+   - OrderStatus
+   - Subtotal_EGP
+   - DeliveryFee_EGP
+   - IsCOD
+   - WasCODRefused
+   - Tip_EGP
+   - PlatformCommissionPercent
+   - PlatformCommissionAmount_EGP
+
+7. CODRefusalLog :
+
+   - RefusalID
+   - RefusalReason
+   - RefusedAmount_EGP
+   - RefusalDateTime
+
+8. CompetitorMenuItem :
+
+   - CompetitorMenuItemID
+   - CompetitorItemName
+   - CompetitorPrice_EGP
+   - IsOnPromotion
+   - DateTracked
+
+9. MenuItem :
+
+   - ItemID
+   - ItemName_AR
+   - ItemName_EN
+   - CurrentPrice_EGP
+   - PackagingCost_EGP
+   - PrepTimeMinutes
+   - IsAvailableForDelivery
+   - IsBundle
+
+10. MenuCategory :
+
+    - CategoryID
+    - CategoryName_AR
+    - CategoryName_EN
+
+11. OrderItem :
+
+    - OrderItemID
+    - Quantity
+    - UnitPriceAtTime_EGP
+    - DiscountApplied_EGP
+
+12. IngredientPrice :
+
+    - IngredientPriceID
+    - PricePerUnit_EGP
+    - EffectiveDate
+
+13. Ingredient :
+
+    - IngredientID
+    - IngredientName
+    - UnitOfMeasure
+
+14. MenuItemIngredient :
+
+    - MenuItemIngredientID
+    - QuantityNeeded

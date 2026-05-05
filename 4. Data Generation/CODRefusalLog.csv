@@ -1,0 +1,343 @@
+﻿RefusalID,OrderID,RefusalReason,RefusedAmount_EGP,RefusalDateTime
+1,1,Wrong address provided,681.36,2024-02-13 11:37:32
+2,6,Customer phone unreachable,649.48,2025-03-12 18:42:30
+3,8,Order amount higher than expected,436.87,2024-12-22 15:08:09
+4,25,Customer not home at delivery time,592.07,2024-11-17 14:15:38
+5,36,Customer not home at delivery time,503.56,2025-11-22 00:42:24
+6,38,Customer phone unreachable,451.99,2025-10-15 22:19:13
+7,40,Customer requested cancellation after dispatch,393.76,2025-03-09 17:58:52
+8,56,Customer ordered from multiple places and chose another,719.5,2024-11-04 23:02:19
+9,67,Customer changed their mind,622.75,2024-09-28 13:54:25
+10,68,Order amount higher than expected,249.36,2025-07-19 15:40:20
+11,71,Order amount higher than expected,798.1,2025-03-24 18:12:20
+12,76,Wrong address provided,519.14,2025-10-15 21:16:45
+13,109,Wrong address provided,537.85,2024-01-02 21:53:38
+14,152,No change available for large bills,437.1,2025-09-12 16:51:07
+15,155,Customer changed their mind,462.27,2025-05-01 01:34:23
+16,160,Customer phone unreachable,669.99,2024-07-26 13:43:39
+17,161,Order amount higher than expected,425.5,2025-04-03 14:54:48
+18,165,Customer ordered from multiple places and chose another,307.89,2025-05-18 21:58:33
+19,167,Customer ordered from multiple places and chose another,350.41,2025-11-13 23:27:57
+20,174,Order amount higher than expected,150.59,2025-01-13 13:14:24
+21,189,Customer not home at delivery time,482.45,2024-03-21 03:25:09
+22,200,Customer disputes item quality without seeing it,366.44,2025-05-23 03:00:17
+23,220,Customer requested cancellation after dispatch,421.2,2024-01-24 14:45:40
+24,241,Customer disputes item quality without seeing it,300.99,2024-12-20 13:35:00
+25,262,Customer requested cancellation after dispatch,519.07,2025-12-05 01:47:33
+26,266,Wrong address provided,452.04,2024-10-07 20:09:35
+27,274,Wrong address provided,398.94,2025-03-06 04:10:09
+28,328,Customer disputes item quality without seeing it,507.57,2025-06-12 23:27:48
+29,336,Customer requested cancellation after dispatch,379.21,2024-10-12 23:04:23
+30,341,Wrong address provided,250.15,2025-06-27 23:41:49
+31,371,Order amount higher than expected,559.77,2024-12-28 23:50:37
+32,373,Wrong address provided,531.64,2024-03-17 19:00:09
+33,378,No change available for large bills,883.64,2024-12-12 01:05:37
+34,387,Customer not home at delivery time,531.95,2024-05-26 21:24:05
+35,418,Order amount higher than expected,404.97,2025-09-21 22:15:17
+36,421,Customer disputes item quality without seeing it,615.44,2024-01-24 22:31:38
+37,445,Customer changed their mind,430.1,2024-11-22 19:38:16
+38,463,No change available for large bills,321.36,2025-05-16 16:00:56
+39,464,Customer ordered from multiple places and chose another,304.18,2024-11-23 15:13:22
+40,467,Customer phone unreachable,512.15,2025-12-13 23:05:05
+41,480,Customer not home at delivery time,555.04,2024-08-10 15:08:27
+42,481,Customer requested cancellation after dispatch,519.8,2025-05-02 02:31:16
+43,508,Customer phone unreachable,322.56,2025-07-08 00:49:19
+44,511,Customer phone unreachable,416.24,2025-07-08 00:26:30
+45,515,Address not found,399.47,2025-07-17 19:03:05
+46,521,Wrong address provided,420.53,2024-09-04 20:12:43
+47,546,Customer phone unreachable,452.26,2025-10-31 18:26:24
+48,550,Wrong address provided,337.25,2024-06-26 11:40:50
+49,551,Address not found,513.41,2024-10-01 15:07:46
+50,559,Customer phone unreachable,382.76,2025-11-26 22:42:08
+51,569,Customer requested cancellation after dispatch,692.55,2024-03-24 19:22:21
+52,589,No change available for large bills,684.97,2025-11-15 20:24:41
+53,602,Customer ordered from multiple places and chose another,225.84,2025-06-10 22:21:28
+54,620,Wrong address provided,242.27,2024-01-25 20:49:28
+55,623,Customer phone unreachable,609.06,2024-09-20 23:59:23
+56,656,Customer not home at delivery time,600.9,2024-01-31 00:02:46
+57,669,Customer ordered from multiple places and chose another,504.73,2024-10-05 00:46:38
+58,676,Customer requested cancellation after dispatch,551.64,2025-02-17 15:32:01
+59,683,No change available for large bills,172.94,2025-11-07 17:20:31
+60,722,Customer disputes item quality without seeing it,678.64,2025-01-23 21:04:12
+61,738,No change available for large bills,609.64,2024-09-16 20:50:59
+62,755,Customer not home at delivery time,378.76,2024-09-04 10:06:08
+63,776,Customer disputes item quality without seeing it,558.7,2025-12-12 22:34:37
+64,798,Customer ordered from multiple places and chose another,531.21,2025-07-26 16:08:02
+65,805,Customer ordered from multiple places and chose another,459.76,2024-11-11 22:12:27
+66,813,Customer not home at delivery time,144.83,2024-01-03 23:44:53
+67,817,Customer requested cancellation after dispatch,485.48,2024-11-09 23:36:32
+68,850,Order amount higher than expected,481.8,2024-10-02 23:41:22
+69,857,Wrong address provided,264.0,2025-02-01 22:50:02
+70,871,Customer disputes item quality without seeing it,542.58,2024-03-14 19:08:52
+71,876,Order amount higher than expected,371.71,2024-02-25 21:14:02
+72,878,Customer requested cancellation after dispatch,172.46,2025-10-04 23:07:10
+73,884,Address not found,358.53,2024-07-27 21:42:30
+74,903,No change available for large bills,523.84,2025-03-06 19:08:02
+75,933,No change available for large bills,222.7,2024-11-27 13:16:15
+76,937,Address not found,362.51,2024-07-30 15:31:01
+77,971,Customer requested cancellation after dispatch,683.31,2025-10-31 14:25:43
+78,977,No change available for large bills,358.4,2024-07-26 00:44:28
+79,1008,Customer not home at delivery time,452.7,2025-12-03 22:18:34
+80,1009,Customer phone unreachable,614.13,2025-09-05 17:53:07
+81,1020,Customer ordered from multiple places and chose another,615.75,2025-02-17 13:02:48
+82,1053,Wrong address provided,299.15,2025-10-22 00:01:47
+83,1070,Address not found,679.96,2024-10-20 12:19:45
+84,1096,Order amount higher than expected,337.82,2025-04-23 22:53:45
+85,1103,Customer disputes item quality without seeing it,211.72,2025-04-02 14:51:58
+86,1106,Wrong address provided,396.6,2024-09-18 00:48:54
+87,1109,Wrong address provided,156.8,2025-05-08 21:04:43
+88,1141,Customer not home at delivery time,474.16,2025-07-25 13:22:14
+89,1142,Customer phone unreachable,229.81,2024-08-22 16:47:06
+90,1148,Wrong address provided,432.84,2024-11-15 14:38:46
+91,1164,Customer phone unreachable,312.49,2025-12-31 11:37:44
+92,1190,Wrong address provided,435.39,2025-12-26 21:59:07
+93,1192,Wrong address provided,329.18,2024-11-19 15:26:13
+94,1222,Customer disputes item quality without seeing it,444.23,2025-06-16 21:07:02
+95,1234,Address not found,307.21,2025-02-27 01:05:09
+96,1251,Order amount higher than expected,356.78,2025-04-24 01:19:04
+97,1266,Customer ordered from multiple places and chose another,398.56,2024-08-13 14:46:30
+98,1274,Order amount higher than expected,525.45,2025-02-27 22:31:56
+99,1285,No change available for large bills,436.84,2025-02-26 23:56:43
+100,1316,Customer phone unreachable,767.6,2024-01-12 13:29:22
+101,1318,Customer disputes item quality without seeing it,678.39,2024-10-01 11:45:40
+102,1336,Address not found,224.32,2025-11-21 20:25:30
+103,1363,Wrong address provided,452.77,2024-10-03 13:34:08
+104,1379,Customer not home at delivery time,199.4,2025-01-05 22:35:24
+105,1395,Customer phone unreachable,348.05,2025-06-06 23:33:30
+106,1402,Customer not home at delivery time,453.69,2024-05-11 14:44:49
+107,1432,Customer changed their mind,172.81,2024-10-14 00:44:37
+108,1441,Customer requested cancellation after dispatch,792.25,2025-03-05 04:51:05
+109,1444,No change available for large bills,228.75,2024-12-10 13:19:04
+110,1480,Customer phone unreachable,702.93,2024-12-27 22:09:55
+111,1482,Order amount higher than expected,507.94,2024-08-15 00:07:54
+112,1484,Customer ordered from multiple places and chose another,164.75,2025-12-12 21:50:27
+113,1490,Order amount higher than expected,458.73,2024-12-27 15:13:06
+114,1494,No change available for large bills,515.68,2024-07-16 15:30:42
+115,1504,Customer phone unreachable,616.91,2025-12-05 01:07:08
+116,1509,Customer disputes item quality without seeing it,514.39,2025-04-05 22:17:51
+117,1522,Customer changed their mind,165.25,2024-11-06 20:20:43
+118,1531,Order amount higher than expected,142.93,2025-01-08 21:18:11
+119,1532,Customer ordered from multiple places and chose another,583.65,2025-02-06 00:55:24
+120,1534,Address not found,472.0,2025-10-17 22:35:39
+121,1539,Address not found,294.35,2025-02-04 00:45:09
+122,1544,Wrong address provided,261.62,2025-05-02 13:17:20
+123,1547,No change available for large bills,412.09,2025-07-23 00:51:13
+124,1550,Customer ordered from multiple places and chose another,248.32,2024-11-07 22:51:53
+125,1562,Wrong address provided,372.53,2025-06-05 19:02:40
+126,1564,Wrong address provided,189.22,2025-11-12 22:48:40
+127,1577,Customer not home at delivery time,220.84,2025-07-24 22:24:59
+128,1595,Customer disputes item quality without seeing it,720.68,2025-03-23 19:35:22
+129,1613,Order amount higher than expected,480.32,2025-04-25 21:04:27
+130,1626,Wrong address provided,313.11,2024-03-28 18:09:33
+131,1636,Customer changed their mind,247.49,2024-07-14 18:53:13
+132,1638,Order amount higher than expected,500.21,2025-02-21 18:15:11
+133,1652,Customer not home at delivery time,399.63,2025-10-13 13:51:25
+134,1655,Customer disputes item quality without seeing it,425.93,2024-09-24 01:08:01
+135,1659,Customer phone unreachable,405.52,2025-10-16 19:24:38
+136,1661,Customer requested cancellation after dispatch,671.2,2024-09-23 01:09:01
+137,1664,Customer requested cancellation after dispatch,469.21,2025-04-22 16:00:56
+138,1683,Wrong address provided,155.91,2024-01-13 19:59:46
+139,1692,Customer ordered from multiple places and chose another,455.78,2024-03-09 09:54:12
+140,1696,Wrong address provided,672.83,2024-04-08 18:50:58
+141,1700,Customer ordered from multiple places and chose another,682.14,2024-04-17 00:14:29
+142,1704,Wrong address provided,714.48,2024-02-26 20:46:33
+143,1705,No change available for large bills,150.78,2025-09-16 20:59:54
+144,1714,Customer phone unreachable,455.79,2024-11-03 21:23:05
+145,1715,Customer changed their mind,409.45,2024-12-03 20:01:18
+146,1734,Customer phone unreachable,687.41,2025-10-09 21:55:00
+147,1735,Customer disputes item quality without seeing it,406.59,2025-12-23 00:31:23
+148,1742,Address not found,265.31,2024-12-27 15:17:20
+149,1745,Address not found,516.02,2025-11-01 14:47:48
+150,1768,No change available for large bills,301.36,2025-12-08 22:07:29
+151,1771,Customer phone unreachable,456.18,2024-07-08 22:38:29
+152,1772,Customer ordered from multiple places and chose another,407.63,2025-08-28 15:17:21
+153,1777,Address not found,131.89,2025-04-09 13:29:59
+154,1785,Wrong address provided,209.97,2025-04-30 13:54:06
+155,1799,Wrong address provided,473.47,2025-01-18 22:55:09
+156,1834,Wrong address provided,643.33,2024-11-22 22:59:08
+157,1843,No change available for large bills,532.38,2025-09-24 22:20:30
+158,1874,Customer requested cancellation after dispatch,381.54,2025-05-15 01:11:23
+159,1886,Address not found,504.22,2025-07-26 13:56:25
+160,1888,No change available for large bills,347.94,2025-08-01 01:07:16
+161,1896,Customer disputes item quality without seeing it,412.15,2025-07-25 00:19:17
+162,1900,Customer phone unreachable,354.26,2025-08-28 17:05:55
+163,1909,Customer requested cancellation after dispatch,633.76,2025-12-21 21:24:08
+164,1913,Customer phone unreachable,525.26,2025-10-19 21:03:00
+165,1947,Customer phone unreachable,420.2,2024-03-20 03:57:19
+166,1954,No change available for large bills,416.62,2025-09-14 14:15:55
+167,1989,Customer requested cancellation after dispatch,717.39,2024-03-10 20:46:06
+168,2001,Customer disputes item quality without seeing it,224.57,2024-03-09 00:44:52
+169,2005,No change available for large bills,673.62,2024-10-02 13:39:30
+170,2009,Customer phone unreachable,432.56,2025-05-08 15:40:59
+171,2010,Customer requested cancellation after dispatch,466.09,2024-01-28 14:58:32
+172,2024,Address not found,474.01,2024-09-03 20:09:19
+173,2027,Customer disputes item quality without seeing it,188.59,2025-07-25 20:38:27
+174,2046,Customer ordered from multiple places and chose another,521.3,2025-12-22 14:49:14
+175,2060,Customer not home at delivery time,747.48,2024-04-03 15:15:03
+176,2091,No change available for large bills,626.74,2025-09-06 20:44:27
+177,2102,Customer requested cancellation after dispatch,372.83,2025-02-12 00:27:51
+178,2120,Wrong address provided,680.98,2025-03-13 19:39:23
+179,2129,Order amount higher than expected,229.7,2025-11-07 13:36:53
+180,2131,Customer changed their mind,571.45,2024-05-20 20:37:39
+181,2174,No change available for large bills,158.07,2025-04-22 23:47:31
+182,2184,Customer phone unreachable,539.4,2024-04-12 22:41:43
+183,2214,Order amount higher than expected,465.15,2025-12-22 14:16:20
+184,2229,Customer requested cancellation after dispatch,621.17,2025-04-14 12:32:00
+185,2245,No change available for large bills,556.64,2025-06-12 17:37:40
+186,2250,Customer phone unreachable,135.41,2025-12-03 22:24:57
+187,2253,Customer requested cancellation after dispatch,682.68,2025-12-01 16:20:47
+188,2258,Customer ordered from multiple places and chose another,503.13,2025-05-05 22:03:33
+189,2262,Customer requested cancellation after dispatch,406.38,2025-01-09 20:24:41
+190,2276,No change available for large bills,631.09,2025-08-14 13:20:06
+191,2284,No change available for large bills,445.1,2024-03-23 03:18:33
+192,2309,Address not found,602.24,2025-08-02 00:34:18
+193,2311,Customer changed their mind,227.68,2024-02-02 20:55:27
+194,2315,Customer phone unreachable,254.93,2024-11-07 14:32:55
+195,2330,Customer phone unreachable,253.22,2024-11-07 22:57:35
+196,2336,Customer phone unreachable,713.82,2024-03-17 18:46:34
+197,2346,Customer requested cancellation after dispatch,454.9,2024-06-13 17:07:46
+198,2358,Wrong address provided,162.13,2025-01-23 20:38:33
+199,2363,Customer disputes item quality without seeing it,491.24,2025-11-25 19:44:18
+200,2368,Address not found,703.74,2025-08-06 15:34:02
+201,2387,Customer ordered from multiple places and chose another,789.93,2024-03-15 02:52:27
+202,2418,Customer ordered from multiple places and chose another,227.89,2025-05-18 15:22:30
+203,2445,Customer requested cancellation after dispatch,209.37,2025-11-29 22:11:05
+204,2455,Address not found,889.25,2025-09-12 13:28:39
+205,2457,Customer requested cancellation after dispatch,668.83,2025-08-13 16:25:55
+206,2458,Customer requested cancellation after dispatch,348.28,2024-08-25 21:00:32
+207,2492,Customer changed their mind,306.32,2025-12-16 14:21:25
+208,2493,Customer requested cancellation after dispatch,354.28,2025-01-19 14:26:48
+209,2503,Wrong address provided,273.09,2024-03-31 19:41:55
+210,2534,Order amount higher than expected,526.87,2024-05-05 22:27:47
+211,2538,Wrong address provided,426.62,2024-12-15 00:35:59
+212,2549,Customer ordered from multiple places and chose another,656.66,2024-09-18 22:20:10
+213,2551,Customer ordered from multiple places and chose another,480.38,2024-03-04 13:57:49
+214,2555,No change available for large bills,265.77,2024-12-26 02:38:52
+215,2582,Customer disputes item quality without seeing it,528.93,2024-07-20 13:31:16
+216,2618,Order amount higher than expected,839.86,2024-08-06 14:19:47
+217,2620,Order amount higher than expected,198.82,2024-11-18 11:24:50
+218,2632,Wrong address provided,176.29,2025-05-07 23:23:19
+219,2633,Customer requested cancellation after dispatch,451.41,2025-03-27 13:59:23
+220,2644,Address not found,228.16,2024-09-27 22:56:57
+221,2645,Customer phone unreachable,525.5,2024-06-21 18:45:37
+222,2660,Customer ordered from multiple places and chose another,666.09,2024-06-11 14:25:05
+223,2665,Customer requested cancellation after dispatch,369.95,2024-01-27 23:21:17
+224,2666,Customer disputes item quality without seeing it,265.11,2024-06-13 20:03:42
+225,2669,Address not found,456.3,2024-03-06 23:39:49
+226,2673,Address not found,761.35,2024-03-15 22:18:22
+227,2678,Customer requested cancellation after dispatch,272.6,2024-01-06 22:22:36
+228,2701,Customer ordered from multiple places and chose another,336.31,2025-05-29 14:30:00
+229,2718,Customer not home at delivery time,478.93,2025-10-13 15:49:32
+230,2729,Wrong address provided,196.59,2025-02-15 23:53:11
+231,2754,No change available for large bills,282.05,2025-02-15 20:23:02
+232,2761,Wrong address provided,264.76,2024-11-12 14:27:24
+233,2775,Customer not home at delivery time,238.8,2025-01-08 20:16:01
+234,2787,Customer ordered from multiple places and chose another,310.04,2024-10-27 21:03:06
+235,2790,No change available for large bills,221.72,2024-01-24 00:56:33
+236,2805,Customer disputes item quality without seeing it,522.42,2024-09-04 21:00:47
+237,2811,No change available for large bills,227.23,2024-10-16 21:22:15
+238,2814,No change available for large bills,452.73,2025-04-17 01:00:58
+239,2819,Customer phone unreachable,582.92,2024-09-12 19:57:53
+240,2834,Order amount higher than expected,691.04,2025-02-06 01:34:44
+241,2836,Wrong address provided,371.77,2024-09-28 00:11:20
+242,2890,Customer requested cancellation after dispatch,424.54,2024-05-16 20:31:44
+243,2912,Address not found,280.27,2024-11-08 21:24:06
+244,2929,Wrong address provided,369.59,2024-10-13 15:25:55
+245,2933,No change available for large bills,384.57,2025-10-07 23:12:52
+246,2947,Order amount higher than expected,627.13,2025-03-16 18:53:59
+247,2953,Address not found,240.29,2024-06-24 23:54:24
+248,2962,Customer disputes item quality without seeing it,716.91,2024-07-21 18:04:35
+249,2976,Order amount higher than expected,440.92,2025-09-14 15:10:11
+250,2982,Customer ordered from multiple places and chose another,622.49,2025-03-01 23:26:42
+251,2994,Wrong address provided,222.48,2025-01-05 20:44:57
+252,3006,No change available for large bills,634.94,2024-07-10 17:47:34
+253,3019,Order amount higher than expected,184.45,2025-02-06 23:34:23
+254,3063,Customer ordered from multiple places and chose another,613.07,2025-03-20 19:08:14
+255,3090,Customer ordered from multiple places and chose another,165.93,2025-06-05 13:26:52
+256,3094,Customer not home at delivery time,1016.42,2025-03-31 13:33:42
+257,3108,No change available for large bills,580.47,2025-03-09 18:26:18
+258,3118,No change available for large bills,400.48,2025-08-16 00:59:03
+259,3127,Customer not home at delivery time,350.9,2024-03-21 02:44:01
+260,3136,Customer requested cancellation after dispatch,643.36,2025-04-24 22:59:54
+261,3146,Address not found,222.58,2025-03-13 03:54:13
+262,3150,Order amount higher than expected,611.05,2025-10-24 18:58:27
+263,3152,Customer phone unreachable,195.64,2025-02-28 21:02:49
+264,3157,Order amount higher than expected,322.65,2024-01-18 13:19:10
+265,3163,Customer changed their mind,304.46,2024-11-06 21:33:29
+266,3174,Customer not home at delivery time,362.72,2024-02-18 21:15:11
+267,3175,Address not found,432.69,2025-07-20 13:05:05
+268,3206,Customer phone unreachable,783.64,2025-06-04 21:30:55
+269,3209,Customer ordered from multiple places and chose another,591.85,2025-02-14 21:40:17
+270,3211,Wrong address provided,508.1,2024-08-30 00:01:39
+271,3240,Customer not home at delivery time,523.08,2025-10-14 14:11:06
+272,3264,Customer disputes item quality without seeing it,212.22,2024-05-09 01:40:05
+273,3270,Customer ordered from multiple places and chose another,318.95,2024-02-10 15:24:51
+274,3276,Customer changed their mind,248.47,2024-10-11 02:47:24
+275,3311,Address not found,401.27,2024-01-05 15:17:38
+276,3314,Address not found,494.34,2025-12-02 23:21:18
+277,3322,Address not found,255.05,2024-10-23 10:13:09
+278,3327,Customer phone unreachable,301.27,2025-05-06 15:49:31
+279,3331,No change available for large bills,688.04,2024-05-02 23:21:15
+280,3339,Customer disputes item quality without seeing it,278.9,2025-06-22 23:46:42
+281,3350,Customer requested cancellation after dispatch,463.3,2024-01-17 13:49:49
+282,3365,Customer requested cancellation after dispatch,290.14,2024-03-28 03:04:58
+283,3398,Customer disputes item quality without seeing it,377.26,2025-08-14 22:48:16
+284,3417,Customer not home at delivery time,712.66,2025-04-12 00:47:24
+285,3420,No change available for large bills,322.37,2025-11-12 15:14:11
+286,3422,Customer changed their mind,802.4,2024-04-10 21:27:44
+287,3431,Customer not home at delivery time,492.13,2025-12-27 00:39:00
+288,3466,No change available for large bills,173.21,2024-12-24 15:32:21
+289,3477,Customer requested cancellation after dispatch,222.51,2024-09-28 14:28:47
+290,3486,Customer requested cancellation after dispatch,412.26,2024-05-10 18:29:03
+291,3489,Customer ordered from multiple places and chose another,208.26,2024-12-10 22:45:25
+292,3496,Customer disputes item quality without seeing it,388.42,2025-04-07 14:18:11
+293,3499,Customer changed their mind,516.49,2024-07-02 23:41:41
+294,3505,No change available for large bills,394.02,2025-07-15 22:13:35
+295,3507,Customer disputes item quality without seeing it,362.4,2025-09-19 01:30:01
+296,3521,Customer phone unreachable,508.66,2025-09-09 15:02:05
+297,3524,Customer requested cancellation after dispatch,202.95,2024-09-11 01:22:14
+298,3534,Customer phone unreachable,448.9,2025-06-04 00:54:55
+299,3549,Customer phone unreachable,561.97,2025-06-22 22:19:03
+300,3562,Customer disputes item quality without seeing it,450.65,2025-11-10 23:04:37
+301,3572,Customer changed their mind,237.91,2024-11-04 15:14:36
+302,3588,Customer changed their mind,302.14,2025-11-07 23:50:05
+303,3602,Wrong address provided,480.18,2024-05-02 02:40:59
+304,3639,Wrong address provided,630.97,2024-10-16 13:39:41
+305,3640,Order amount higher than expected,672.43,2024-01-19 01:12:24
+306,3653,Customer changed their mind,235.44,2025-03-01 22:51:49
+307,3670,No change available for large bills,683.77,2024-10-27 23:24:08
+308,3676,Wrong address provided,291.73,2025-07-05 20:52:47
+309,3681,Customer changed their mind,167.46,2024-10-18 01:57:11
+310,3684,Customer ordered from multiple places and chose another,512.05,2024-12-27 00:18:23
+311,3700,Customer phone unreachable,283.41,2024-01-11 19:59:26
+312,3732,Customer disputes item quality without seeing it,780.68,2024-03-12 04:16:55
+313,3743,Customer not home at delivery time,504.33,2025-08-22 13:12:16
+314,3753,Customer ordered from multiple places and chose another,505.19,2025-09-04 00:53:34
+315,3756,Customer changed their mind,349.5,2024-04-20 13:17:00
+316,3757,Customer disputes item quality without seeing it,269.16,2024-11-21 23:21:03
+317,3778,Customer disputes item quality without seeing it,255.91,2024-08-13 15:00:18
+318,3796,Address not found,431.97,2025-07-05 13:15:16
+319,3799,Customer requested cancellation after dispatch,593.82,2025-03-16 23:16:52
+320,3812,Customer not home at delivery time,203.33,2024-12-05 17:01:51
+321,3828,Customer changed their mind,199.48,2025-07-01 13:13:32
+322,3835,Customer disputes item quality without seeing it,690.61,2025-02-02 23:24:56
+323,3842,Customer disputes item quality without seeing it,345.25,2025-11-09 00:30:50
+324,3845,Order amount higher than expected,432.28,2025-10-28 14:45:14
+325,3846,Order amount higher than expected,219.6,2024-10-17 21:53:19
+326,3855,Address not found,175.2,2024-11-07 01:24:49
+327,3887,No change available for large bills,325.0,2025-11-05 23:31:47
+328,3890,Customer ordered from multiple places and chose another,366.96,2025-04-04 16:34:54
+329,3892,No change available for large bills,335.58,2025-07-08 00:52:31
+330,3893,Customer requested cancellation after dispatch,292.77,2024-09-18 22:33:45
+331,3895,Address not found,214.0,2024-08-06 00:24:55
+332,3905,Customer disputes item quality without seeing it,475.87,2025-12-01 15:04:40
+333,3927,Wrong address provided,445.32,2024-10-11 13:09:00
+334,3953,Customer changed their mind,584.89,2024-03-15 04:39:20
+335,3954,Order amount higher than expected,182.94,2024-10-09 14:34:36
+336,3969,Address not found,375.68,2025-05-14 15:32:40
+337,3972,Customer requested cancellation after dispatch,224.04,2025-03-14 04:40:30
+338,3985,No change available for large bills,788.41,2024-03-31 19:57:20
+339,4013,Customer phone unreachable,483.47,2025-01-03 01:24:20
+340,4025,Customer requested cancellation after dispatch,285.37,2025-01-14 12:39:20
+341,4034,Address not found,220.86,2025-11-15 00:38:27
+342,4045,Customer not home at delivery time,435.41,2025-09-07 15:49:00

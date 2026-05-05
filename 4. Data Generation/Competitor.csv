@@ -1,0 +1,44 @@
+﻿CompetitorID,ZoneID,CompetitorName_AR,CompetitorName_EN,HasDelivery,AverageDeliveryMinutes,GoogleMapsRating
+1,1,مطعم أبو شقرة,Abu Shakra Restaurant,1,35,4.3
+2,1,كنتاكي,KFC,1,25,3.7
+3,1,مطعم الهانا,El Hana Restaurant,1,40,4.1
+4,2,ماكدونالدز,McDonald's,1,22,3.6
+5,2,مطعم فيليكس,Felix Restaurant,1,38,4.4
+6,2,مطعم زوبا,Zooba,1,30,4.5
+7,3,بيتزا هت,Pizza Hut,1,28,3.8
+8,3,مطعم بورتو,Porto Restaurant,1,35,4.2
+9,3,دجاج مارين,Chicken Marin,1,30,3.9
+10,4,مطعم كازاز,Kazaz Restaurant,1,32,4.6
+11,4,الأمريكاني,El Americani,1,28,3.5
+12,5,كشري الحسين,Koshary El Hussein,1,20,4.2
+13,5,سنداوتش ميكر,Sandwich Maker,1,25,3.8
+14,5,مطعم الريف,El Reef Restaurant,0,,3.3
+15,6,مطعم أبو طارق,Abu Tarek Restaurant,1,30,4.4
+16,6,كنتاكي,KFC,1,22,3.6
+17,6,بابا عمر,Baba Omar,1,35,4.0
+18,7,مطعم عزبة حنفي,Azbet Hanafi,1,40,3.4
+19,7,ماكدونالدز,McDonald's,1,25,3.5
+20,8,مطعم البيك,Al Baik,1,28,4.1
+21,8,بيتزا هت,Pizza Hut,1,30,3.9
+22,9,حسن بلقطة,Hassan Balkutah,1,45,4.3
+23,9,كنتاكي,KFC,1,25,3.7
+24,10,مطعم زوبا,Zooba,1,30,4.5
+25,10,ماكدونالدز,McDonald's,1,22,3.6
+26,11,مطعم البيك,Al Baik,1,30,4.0
+27,11,مطعم الهانا,El Hana Restaurant,1,38,3.8
+28,13,كشري الحسين,Koshary El Hussein,1,25,4.1
+29,13,سنداوتش ميكر,Sandwich Maker,0,,2.9
+30,15,مطعم الريف,El Reef Restaurant,1,35,3.6
+31,15,مطعم أبو شقرة,Abu Shakra Restaurant,1,40,4.0
+32,18,مطعم عزبة حنفي,Azbet Hanafi,1,30,3.2
+33,20,كنتاكي,KFC,1,28,3.5
+34,20,مطعم الهانا,El Hana Restaurant,1,38,3.7
+35,22,مطعم البيك,Al Baik,1,32,3.9
+36,24,مطعم الريف,El Reef Restaurant,1,40,3.3
+37,24,مطعم أبو طارق,Abu Tarek Restaurant,0,,2.5
+38,26,سنداوتش ميكر,Sandwich Maker,1,35,3.6
+39,28,مطعم كازاز,Kazaz Restaurant,1,38,3.8
+40,30,مطعم عزبة حنفي,Azbet Hanafi,1,42,3.1
+41,32,مطعم الريف,El Reef Restaurant,1,35,3.4
+42,35,ماكدونالدز,McDonald's,1,28,3.6
+43,35,بيتزا هت,Pizza Hut,1,32,3.8

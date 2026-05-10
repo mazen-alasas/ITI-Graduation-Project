@@ -1,6 +1,7 @@
 // ============================================================
 // DB DIAGRAM - FOOD DELIVERY BUSINESS SCHEMA
 // Currency: EGP | Generated from confirmed ERD description
+// Updated from live SQL Server schema on 2026-05-11
 // ============================================================
 
 
@@ -10,20 +11,20 @@
 
 Table City {
   CityID        int         [pk, increment, note: 'Unique identifier for the city']
-  CityName_AR   varchar     [not null, note: 'City name in Arabic']
-  CityName_EN   varchar     [not null, note: 'City name in English']
+  CityName_AR   nvarchar    [not null, note: 'City name in Arabic']
+  CityName_EN   nvarchar    [not null, note: 'City name in English']
 
   note: 'Represents the cities where the business operates'
 }
 
 Table DeliveryZone {
   ZoneID                  int         [pk, increment, note: 'Unique identifier for the delivery zone']
-  ZoneName_AR             varchar     [not null, note: 'Zone name in Arabic']
-  ZoneName_EN             varchar     [not null, note: 'Zone name in English']
-  TrafficFactor           decimal     [not null, note: 'Location-based multiplier (e.g. 1.0 normal, 1.25 congested). Affects estimated delivery time only — does not change over time']
-  BaseDeliveryMinutes     int         [not null, note: 'Standard delivery time in minutes for this zone before traffic adjustment']
-  MinOrderForDelivery_EGP decimal     [not null, note: 'Minimum order value in EGP required to qualify for delivery in this zone']
-  DeliveryFee             decimal     [not null, note: 'Fixed standard delivery fee for this zone — set as a business decision, not derived']
+  ZoneName_AR             nvarchar    [not null, note: 'Zone name in Arabic']
+  ZoneName_EN             nvarchar    [not null, note: 'Zone name in English']
+  TrafficFactor           decimal     [not null, default: 1.00, note: 'Location-based multiplier (e.g. 1.0 normal, 1.25 congested). Affects estimated delivery time only — does not change over time']
+  BaseDeliveryMinutes     int         [not null, default: 20, note: 'Standard delivery time in minutes for this zone before traffic adjustment']
+  MinOrderForDelivery_EGP decimal     [not null, default: 100, note: 'Minimum order value in EGP required to qualify for delivery in this zone']
+  DeliveryFee_EGP         decimal     [not null, default: 15, note: 'Fixed standard delivery fee for this zone — set as a business decision, not derived']
   CityID                  int         [not null, ref: > City.CityID, note: 'FK — the city this zone belongs to']
 
   note: 'A geographic sub-area within a city where deliveries are made'
@@ -36,12 +37,12 @@ Table DeliveryZone {
 
 Table DeliveryPlatform {
   PlatformID            int         [pk, increment, note: 'Unique identifier for the delivery platform']
-  PlatformName_AR       varchar     [not null, note: 'Platform name in Arabic']
-  PlatformName_EN       varchar     [not null, note: 'Platform name in English']
+  PlatformName_AR       nvarchar    [not null, note: 'Platform name in Arabic']
+  PlatformName_EN       nvarchar    [not null, note: 'Platform name in English']
   CommissionRateDefault decimal     [not null, note: 'Default commission percentage the platform charges per order']
-  AvgDeliveryFee_EGP    decimal     [note: 'Average delivery fee this platform charges customers']
+  AvgDeliveryFee_EGP    decimal     [not null, note: 'Average delivery fee this platform charges customers']
   IsNegotiable          boolean     [not null, default: false, note: 'Whether the commission rate can be negotiated']
-  HasCODSupport         boolean     [not null, default: false, note: 'Whether the platform supports Cash on Delivery']
+  HasCODSupport         boolean     [not null, default: true, note: 'Whether the platform supports Cash on Delivery']
   HasWalletPayment      boolean     [not null, default: false, note: 'Whether the platform supports digital wallet payment']
 
   note: 'Third-party food delivery platform (e.g. Talabat, Noon Food). All orders in this system must come through a platform — no direct orders are tracked'
@@ -54,11 +55,11 @@ Table DeliveryPlatform {
 
 Table Customer {
   CustomerID      int         [pk, increment, note: 'Unique identifier for the customer']
-  FullName_AR     varchar     [not null, note: 'Customer full name in Arabic']
-  FullName_EN     varchar     [note: 'Customer full name in English']
-  Gender          char(1)     [not null, note: 'Customer gender — M for Male, F for Female']
-  PhoneNumber     varchar     [not null, unique, note: 'Customer contact number — used for identification']
-  FirstOrderDate  date        [note: 'Date the customer placed their very first order']
+  FullName_AR     nvarchar    [note: 'Customer full name in Arabic – now nullable']
+  FullName_EN     nvarchar    [note: 'Customer full name in English']
+  Gender          char(10)    [not null, note: 'Customer gender — M for Male, F for Female (stored as char(10))']
+  PhoneNumber     nvarchar    [not null, unique, note: 'Customer contact number — used for identification']
+  FirstOrderDate  date        [not null, note: 'Date the customer placed their very first order']
   ZoneID          int         [not null, ref: > DeliveryZone.ZoneID, note: 'FK — the delivery zone this customer belongs to']
 
   note: 'Represents a person who orders through a delivery platform. IsBlackListed is a derived Power BI measure: flagged if (COD Refusals / Total Orders) > 25%'
@@ -73,12 +74,12 @@ Table Orders {
   OrderID                       int         [pk, increment, note: 'Unique identifier for the order']
   OrderDate                     date        [not null, note: 'Date the order was placed']
   OrderTime                     time        [not null, note: 'Time the order was placed']
-  OrderStatus                   varchar     [not null, note: 'Current status: e.g. Pending, Delivered, Cancelled']
+  OrderStatus                   nvarchar    [not null, default: 'Pending', note: 'Current status: e.g. Pending, Delivered, Cancelled']
   Subtotal_EGP                  decimal     [not null, note: 'Total item prices before delivery fee and tip']
-  DeliveryFee_EGP               decimal     [not null, note: 'Delivery fee applied to this specific order']
+  DeliveryFee_EGP               decimal     [not null, default: 0, note: 'Delivery fee applied to this specific order']
   Tip_EGP                       decimal     [default: 0, note: 'Optional tip added by the customer']
-  IsCOD                         boolean     [not null, default: false, note: 'Whether the payment method is Cash on Delivery']
-  WasCODRefused                 boolean     [not null, default: false, note: 'Flag — true if the customer refused to pay on delivery']
+  IsCOD                         boolean     [not null, default: true, note: 'Whether the payment method is Cash on Delivery']
+  WasCODRefused                 boolean     [default: 0, note: 'Flag — true if the customer refused to pay on delivery (nullable)']
   PlatformCommissionPercent     decimal     [not null, note: 'The commission percentage applied by the platform for this specific order — may differ from the platform default if negotiated']
   PlatformCommissionAmount_EGP  decimal     [not null, note: 'Actual monetary amount paid to the platform as commission = Subtotal_EGP x (PlatformCommissionPercent / 100)']
   CustomerID                    int         [not null, ref: > Customer.CustomerID, note: 'FK — the customer who placed this order']
@@ -90,9 +91,9 @@ Table Orders {
 
 Table CODRefusalLog {
   RefusalID           int         [pk, increment, note: 'Unique identifier for the refusal event']
-  RefusalReason       varchar     [note: 'Stated reason why the customer refused to pay on delivery']
+  RefusalReason       nvarchar    [note: 'Stated reason why the customer refused to pay on delivery']
   RefusedAmount_EGP   decimal     [not null, note: 'Total order amount that was refused']
-  RefusalDateTime     datetime    [not null, note: 'Exact date and time the refusal occurred']
+  RefusalDateTime     datetime    [not null, default: `getdate()`, note: 'Exact date and time the refusal occurred']
   OrderID             int         [not null, unique, ref: - Orders.OrderID, note: 'FK — the order that was refused (1-to-1)']
 
   note: 'Logs every Cash on Delivery refusal incident'
@@ -100,9 +101,10 @@ Table CODRefusalLog {
 
 Table OrderItem {
   OrderItemID           int         [pk, increment, note: 'Unique identifier for the order line item']
-  Quantity              int         [not null, note: 'Number of units of this menu item ordered']
+  Quantity              int         [not null, default: 1, note: 'Number of units of this menu item ordered']
   UnitPriceAtTime_EGP   decimal     [not null, note: 'Unit price of the item at the time the order was placed — preserved for historical accuracy']
   DiscountApplied_EGP   decimal     [default: 0, note: 'Discount amount applied to this specific line item']
+  CostAtTime_EGP        decimal     [note: 'Cost of ingredients at order time (new column)']
   OrderID               int         [not null, ref: > Orders.OrderID, note: 'FK — the order this item belongs to']
   ItemID                int         [not null, ref: > MenuItem.ItemID, note: 'FK — the menu item this line references']
 
@@ -116,21 +118,22 @@ Table OrderItem {
 
 Table MenuCategory {
   CategoryID      int         [pk, increment, note: 'Unique identifier for the category']
-  CategoryName_AR varchar     [not null, note: 'Category name in Arabic']
-  CategoryName_EN varchar     [not null, note: 'Category name in English']
+  CategoryName_AR nvarchar    [not null, note: 'Category name in Arabic']
+  CategoryName_EN nvarchar    [not null, note: 'Category name in English']
 
   note: 'Groups menu items into logical sections (e.g. Appetizers, Grills, Drinks)'
 }
 
 Table MenuItem {
   ItemID                  int         [pk, increment, note: 'Unique identifier for the menu item']
-  ItemName_AR             varchar     [not null, note: 'Item name in Arabic']
-  ItemName_EN             varchar     [not null, note: 'Item name in English']
+  ItemName_AR             nvarchar    [not null, note: 'Item name in Arabic']
+  ItemName_EN             nvarchar    [not null, note: 'Item name in English']
   CurrentPrice_EGP        decimal     [not null, note: 'Current selling price of the item']
-  PackagingCost_EGP       decimal     [default: 0, note: 'Cost of packaging materials for this item']
-  PrepTimeMinutes         int         [note: 'Estimated preparation time in minutes']
+  PackagingCost_EGP       decimal     [default: 2.00, note: 'Cost of packaging materials for this item']
+  PrepTimeMinutes         int         [default: 5, note: 'Estimated preparation time in minutes']
   IsAvailableForDelivery  boolean     [not null, default: true, note: 'Whether this item is currently available for delivery orders']
   IsBundle                boolean     [not null, default: false, note: 'Whether this item is a combo/bundle of multiple items']
+  ProfitMargin_Percent    int         [not null, default: 60, note: 'Target profit margin percentage (new column)']
   CategoryID              int         [not null, ref: > MenuCategory.CategoryID, note: 'FK — the category this item belongs to']
 
   note: 'A dish or product on the menu. IngredientCost_EGP is a derived Power BI measure calculated from MenuItemIngredient x IngredientPrice'
@@ -143,9 +146,9 @@ Table MenuItem {
 
 Table Ingredient {
   IngredientID    int         [pk, increment, note: 'Unique identifier for the ingredient']
-  IngredientName_AR  varchar  [not null, note: 'Arabic Name of the ingredient']
-  IngredientName_EN  varchar  [not null, note: 'English Name of the ingredient']
-  UnitOfMeasure   varchar     [not null, note: 'Unit of measurement for this ingredient (e.g. grams, liters, pieces)']
+  IngredientName_AR  nvarchar  [not null, note: 'Arabic Name of the ingredient']
+  IngredientName_EN  nvarchar  [not null, note: 'English Name of the ingredient']
+  UnitOfMeasure   nvarchar     [not null, default: 'kg', note: 'Unit of measurement for this ingredient (e.g. grams, liters, pieces)']
 
   note: 'A raw material used in preparing menu items. Every ingredient must be assigned to at least one menu item'
 }
@@ -161,7 +164,7 @@ Table IngredientPrice {
 
 Table MenuItemIngredient {
   MenuItemIngredientID  int         [pk, increment, note: 'Unique identifier for the ingredient-item link']
-  QuantityNeeded        decimal     [not null, note: 'Quantity of this ingredient needed to prepare one unit of the menu item']
+  QuantityNeeded        decimal     [note: 'Quantity of this ingredient needed to prepare one unit of the menu item (now nullable)']
   ItemID                int         [not null, ref: > MenuItem.ItemID, note: 'FK — the menu item that uses this ingredient']
   IngredientID          int         [not null, ref: > Ingredient.IngredientID, note: 'FK — the ingredient being used']
 
@@ -175,11 +178,11 @@ Table MenuItemIngredient {
 
 Table Competitor {
   CompetitorID            int         [pk, increment, note: 'Unique identifier for the competitor']
-  CompetitorName_AR       varchar     [not null, note: 'Competitor name in Arabic']
-  CompetitorName_EN       varchar     [not null, note: 'Competitor name in English']
-  HasDelivery             boolean     [not null, default: false, note: 'Whether the competitor offers delivery']
-  AverageDeliveryMinutes  int         [note: 'Competitor average delivery time in minutes']
-  GoogleMapsRating        decimal     [note: 'Competitor Google Maps star rating']
+  CompetitorName_AR       nvarchar    [not null, note: 'Competitor name in Arabic']
+  CompetitorName_EN       nvarchar    [not null, note: 'Competitor name in English']
+  HasDelivery             boolean     [not null, default: true, note: 'Whether the competitor offers delivery']
+  AverageDeliveryMinutes  int         [note: 'Competitor average delivery time in minutes (nullable)']
+  GoogleMapsRating        decimal     [note: 'Competitor Google Maps star rating (nullable)']
   ZoneID                  int         [not null, ref: > DeliveryZone.ZoneID, note: 'FK — the single delivery zone this competitor operates in']
 
   note: 'A competing restaurant being tracked for market intelligence. Each competitor operates in exactly one delivery zone'
@@ -195,7 +198,7 @@ Table CompetitorPlatform {
 
 Table CompetitorMenuItem {
   CompetitorMenuItemID  int         [pk, increment, note: 'Unique identifier for the tracked competitor item']
-  CompetitorItemName    varchar     [not null, note: 'Name of the item as listed by the competitor']
+  CompetitorItemName    nvarchar    [not null, note: 'Name of the item as listed by the competitor']
   CompetitorPrice_EGP   decimal     [not null, note: 'Price the competitor charges for this item']
   IsOnPromotion         boolean     [not null, default: false, note: 'Whether this item is currently on promotion at the competitor']
   DateTracked           date        [not null, note: 'Date this price/promotion data point was recorded']

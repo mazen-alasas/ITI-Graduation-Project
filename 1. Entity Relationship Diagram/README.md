@@ -120,7 +120,7 @@ Groups menu items into logical categories (e.g., Mains, Drinks, Desserts).
 Master list of all ingredients used in the kitchen.
 
 | Column | Description |
-|--------|------|-------------|
+|--------|-------------|
 | `IngredientID` 🔑 | Primary key |
 | `IngredientName` | Name of the ingredient |
 | `UnitOfMeasure` | Unit used to measure this ingredient (e.g., kg, liter) |

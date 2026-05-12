@@ -1,4 +1,4 @@
-﻿IngredientID,IngredientName_EN,IngredientName_AR,UnitOfMeasure
+IngredientID,IngredientName_EN,IngredientName_AR,UnitOfMeasure
 1,Chicken Breast,صدر دجاج,kg
 2,Minced Beef,لحم بقري مفروم,kg
 3,Lamb Kofta Mix,خلطة كفتة ضأن,kg
@@ -6,56 +6,60 @@
 5,Pigeon,حمام,piece
 6,Liver (Calf),كبدة عجل,kg
 7,Sausage (Basterma),بسطرمة,kg
-8,Okra,بامية,kg
-9,Molokhia (Dried),ملوخية مجففة,kg
-10,Tomatoes,طماطم,kg
-11,Onions,بصل,kg
-12,Garlic,ثوم,kg
-13,Eggplant,باذنجان,kg
-14,Potatoes,بطاطس,kg
-15,Cucumber,خيار,kg
-16,Parsley,بقدونس,kg
-17,Coriander,كزبرة,kg
-18,Green Pepper,فلفل أخضر,kg
-19,Lettuce,خس,kg
-20,Lemon,ليمون,kg
-21,Fava Beans (Ful),فول مدمس,kg
-22,Chickpeas,حمص,kg
-23,Lentils,عدس,kg
-24,Rice,أرز,kg
-25,Pasta (Macaroni),مكرونة,kg
-26,Vermicelli,شعرية,kg
-27,Pita Bread,عيش بلدي,piece
-28,Fino Bread (Roll),عيش فينو,piece
-29,Burger Bun,خبز برجر,piece
-30,Pizza Dough,عجينة بيتزا,kg
-31,Tahini,طحينة,kg
-32,Tomato Paste,صلصة طماطم,kg
-33,Bechamel Sauce Mix,خلطة بشاميل,kg
-34,Sunflower Oil,زيت عباد الشمس,liter
-35,Butter,زبدة,kg
-36,Cheese (Romi),جبنة رومي,kg
-37,Mozzarella Cheese,جبنة موزاريلا,kg
-38,Eggs,بيض,piece
-39,Milk,لبن,liter
-40,Cream,قشطة / كريمة,liter
-41,Flour,دقيق,kg
-42,Sugar,سكر,kg
-43,Salt,ملح,kg
-44,Black Pepper,فلفل أسود,gram
-45,Cumin,كمون,gram
-46,Cinnamon,قرفة,gram
-47,Cardamom,هيل,gram
-48,Chili Powder,فلفل حار,gram
-49,Turmeric,كركم,gram
-50,Vinegar,خل,liter
-51,Yogurt,زبادي,kg
-52,Semolina,سميد,kg
-53,Mango (Fresh),مانجو طازجة,kg
-54,Hibiscus (Dried),كركديه مجفف,kg
-55,Tea Leaves,شاي,gram
-56,Turkish Coffee,قهوة تركي,gram
-57,Grape Leaves,ورق عنب,kg
-58,Nuts Mix (for Om Ali),خلطة مكسرات,kg
-59,Konafa (Shredded Dough),كنافة خيوط,kg
-60,Ghee (Samn Baladi),سمن بلدي,kg
+8,Rabbit Meat,أرانب,kg
+9,Cow Feet,كوارع,kg
+10,Molokhia (Dried),ملوخية مجففة,kg
+11,Tomatoes,طماطم,kg
+12,Onions,بصل,kg
+13,Garlic,ثوم,kg
+14,Eggplant,باذنجان,kg
+15,Potatoes,بطاطس,kg
+16,Cucumber,خيار,kg
+17,Parsley,بقدونس,kg
+18,Coriander,كزبرة,kg
+19,Green Pepper,فلفل أخضر,kg
+20,Lettuce,خس,kg
+21,Lemon,ليمون,kg
+22,Orange,برتقال,kg
+23,Fava Beans (Ful),فول مدمس,kg
+24,Chickpeas,حمص,kg
+25,Lentils,عدس,kg
+26,Rice,أرز,kg
+27,Pasta (Macaroni),مكرونة,kg
+28,Vermicelli,شعرية,kg
+29,Pita Bread,عيش بلدي,piece
+30,Fino Bread (Roll),عيش فينو,piece
+31,Burger Bun,خبز برجر,piece
+32,Pizza Dough,عجينة بيتزا,kg
+33,Tahini,طحينة,kg
+34,Tomato Paste,صلصة طماطم,kg
+35,Bechamel Sauce Mix,خلطة بشاميل,kg
+36,Sunflower Oil,زيت عباد الشمس,kg
+37,Butter,زبدة,kg
+38,Cheese (Romi),جبنة رومي,kg
+39,Mozzarella Cheese,جبنة موزاريلا,kg
+40,Eggs,بيض,piece
+41,Milk,لبن,kg
+42,Cream,قشطة / كريمة,kg
+43,Flour,دقيق,kg
+44,Sugar,سكر,kg
+45,Salt,ملح,kg
+46,Black Pepper,فلفل أسود,kg
+47,Cumin,كمون,kg
+48,Cinnamon,قرفة,kg
+49,Cardamom,هيل,kg
+50,Chili Powder,فلفل حار,kg
+51,Turmeric,كركم,kg
+52,Vinegar,خل,kg
+53,Yogurt,زبادي,kg
+54,Semolina,سميد,kg
+55,Mango (Fresh),مانجو طازجة,kg
+56,Hibiscus (Dried),كركديه مجفف,kg
+57,Tea Leaves,شاي,kg
+58,Turkish Coffee,قهوة تركي,kg
+59,Anise,يانسون,kg
+60,Grape Leaves,ورق عنب,kg
+61,Nuts Mix,خلطة مكسرات,kg
+62,Konafa (Shredded Dough),كنافة خيوط,kg
+63,Ghee (Samn Baladi),سمن بلدي,kg
+64,Bulgur Wheat,برغل,kg

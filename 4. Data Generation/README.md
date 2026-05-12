@@ -70,9 +70,11 @@ Use the following **exact dates** to drive seasonal patterns in Orders, OrderIte
 
 ### TABLE 2: `DeliveryZone`
 **Description:** Specific delivery neighborhoods or districts within each city.
-**Target size:** 40–45 rows
+**Actual size:** 35 rows
 
-Distribute zones across all cities. Use **1 zone for small/simple cities** (e.g., Fayoum, Shebin El Kom, Zagazig), **2–3 zones for mid-size cities** (Mansoura, Ismailia, Tanta, Port Said, Suez, Damietta, Minya), and **4–5 zones for large cities** (Cairo gets 5, Giza gets 4–5, Alexandria gets 4).
+Zones are distributed across all cities as follows: **1 zone for small/simple cities** (Fayoum, Shebin El Kom, Zagazig, El Shorouk), **2 zones for mid-size cities** (Mansoura, Ismailia, Tanta, Port Said, Asyut, Suez, Damietta, Minya), and **5 zones for large cities** (Cairo: 5, Giza: 5, Alexandria: 4).
+
+> **Note:** Maadi (المعادي) is assigned to **Giza (CityID=3)** as ZoneID=10, consistent with its administrative classification in this dataset.
 
 **Zone examples per city (use these names):**
 
@@ -152,7 +154,7 @@ Distribute zones across all cities. Use **1 zone for small/simple cities** (e.g.
 
 ### TABLE 5: `Ingredient`
 **Description:** Raw ingredients used in menu items. All ingredient names must appear in **Arabic** in a dedicated Arabic name column.
-**Target size:** 40–55 rows
+**Actual size:** 64 rows
 
 | Column | Description & Egyptian Values |
 |---|---|
@@ -230,7 +232,7 @@ Distribute zones across all cities. Use **1 zone for small/simple cities** (e.g.
 
 ### TABLE 6: `MenuItem`
 **Description:** All dishes/items on the delivery menu. Ensure **at least 3 items per category**, with richer categories (Grills, Traditional Egyptian, Sandwiches, Desserts) having 5–8 items.
-**Target size:** 50–65 rows
+**Actual size:** 60 rows (ItemID 1–60)
 
 **Minimum items per category:**
 - Grills (مشويات): ≥ 6 items (kofta, kabab, chicken, liver, mixed, shawarma meat)
@@ -262,7 +264,7 @@ Distribute zones across all cities. Use **1 zone for small/simple cities** (e.g.
 
 ### TABLE 7: `IngredientPrice`
 **Description:** Historical price records per ingredient. Prices reflect real Egyptian inflation. Updated **on the 1st of each month** for every ingredient.
-**Target size:** 600–800 rows (one record per ingredient per month, covering Jan 2024 – Dec 2025 = 24 months × ~40 ingredients)
+**Actual size:** 1,536 rows (64 ingredients × 24 months, covering Jan 2024 – Dec 2025)
 
 | Column | Description & Egyptian Values |
 |---|---|
@@ -325,7 +327,7 @@ Distribute zones across all cities. Use **1 zone for small/simple cities** (e.g.
 
 ### TABLE 8: `MenuItemIngredient`
 **Description:** Which ingredients go into each menu item and in what quantities. This table is used to **calculate ingredient cost per item** at the time of each order.
-**Target size:** 180–280 rows (each item uses 3–8 ingredients on average)
+**Actual size:** 356 rows — covers **60 menu items** (ItemID 1–60) linked to **64 ingredients** (IngredientID 1–64), with each item using 3–8 ingredients on average.
 
 | Column | Description & Egyptian Values |
 |---|---|
@@ -509,3 +511,4 @@ For each menu item, calculate its **IngredientCost** = Σ (QuantityNeeded × Pri
 *Generated for: Restaurant Delivery Profitability & Competitor Intelligence System — Egyptian Market Edition*
 *Schema version: SQL Server 2019+*
 *Prompt version: Adjusted v2 — Jan 2024–Dec 2025 data range*
+*README last updated: Reflects actual generated CSV data (DeliveryZone: 35 rows, Ingredient: 64 rows, MenuItemIngredient: 356 rows, IngredientPrice: 1,536 rows, MenuItem: 60 rows)*

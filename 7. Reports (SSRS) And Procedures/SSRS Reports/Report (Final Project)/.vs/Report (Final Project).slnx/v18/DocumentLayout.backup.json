@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\ITI\\reports\\Report (Final Project)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62B97B05-EBD4-1E80-878B-07C6D7894AF6}|Report (Final Project)\\Report (Final Project).rptproj|G:\\ITI\\reports\\Report (Final Project)\\Report (Final Project)\\Order And Customer Payment Details Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}",
+      "RelativeMoniker": "D:0:0:{62B97B05-EBD4-1E80-878B-07C6D7894AF6}|Report (Final Project)\\Report (Final Project).rptproj|solutionrelative:Report (Final Project)\\Order And Customer Payment Details Report.rdl||{420F4200-DD61-4785-81F3-52669CBC208E}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Order And Customer Payment Details Report.rdl [Design]",
+              "DocumentMoniker": "G:\\ITI\\reports\\Report (Final Project)\\Report (Final Project)\\Order And Customer Payment Details Report.rdl",
+              "RelativeDocumentMoniker": "Report (Final Project)\\Order And Customer Payment Details Report.rdl",
+              "ToolTip": "G:\\ITI\\reports\\Report (Final Project)\\Report (Final Project)\\Order And Customer Payment Details Report.rdl [Design]*",
+              "RelativeToolTip": "Report (Final Project)\\Order And Customer Payment Details Report.rdl [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-09T15:11:20.164Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

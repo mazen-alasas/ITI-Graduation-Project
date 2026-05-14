@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="Restaurant_DataSourceNew">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=MAZEN_ALASAS\SQLEXPRESS;Initial Catalog=RestaurantProfitability_EG</ConnectString>
+    <IntegratedSecurity>true</IntegratedSecurity>
+  </ConnectionProperties>
+  <DataSourceID>f0c80a5e-9247-4896-92fd-20a5e92476e4</DataSourceID>
+</RptDataSource>

@@ -163,7 +163,7 @@ The system includes an automated pipeline that monitors incoming COD orders ever
 #### How It Works
 
 **Step 1 — Schedule Trigger**
-The workflow fires automatically every 5 minutes.
+The workflow fires automatically every 1 minutes.
 
 **Step 2 — Microsoft SQL (Update Risk)**
 Executes `sp_UpdateCustomerRisk` to recalculate the risk score for every customer based on their full COD refusal history.

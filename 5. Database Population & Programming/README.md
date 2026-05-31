@@ -39,8 +39,6 @@ WITH (
 
 ## ⚙️ Stored Procedures
 
-`StoredProcedures.sql` contains all procedures used throughout the project, including:
+`StoredProcedures.sql` contains full **CRUD operations** (Select, Insert, Update, Delete) for all 15 database tables:
 
-- **CRUD Operations** — Insert, Update, Delete, and Select for all core tables
-- **Reporting Procedures** — Used by SSRS reports (Zone Performance, Customer Profitability, Platform Performance, Competitor Comparison, Top Selling Items)
-- **DWH Reporting** — Order & Customer Payment Details report running on the Data Warehouse
+City, Customer, Orders, OrderItem, DeliveryZone, DeliveryPlatform, MenuCategory, Ingredient, MenuItem, IngredientPrice, MenuItemIngredient, Competitor, CompetitorPlatform, CODRefusalLog, CompetitorMenuItem

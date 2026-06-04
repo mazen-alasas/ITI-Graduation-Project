@@ -148,13 +148,3 @@ Then open `http://localhost:5678` in Chrome, confirm the N8N workflow is Publish
 | Owner Dashboard | Monthly stats, BI dashboard links, SSRS report screenshots |
 
 ---
-
-## Team
-
-| Member | Responsibility |
-|--------|---------------|
-| Ali Elsabaa | Streamlit app, N8N workflow, Menu & Ingredients dashboards (#9–12) |
-| Abdullah Elsayed | Executive & Operations dashboards (#1–4) |
-| Abdelrahman Rafaat | COD & Zones dashboards (#5–8) |
-| Mazen | Customer Analytics dashboards (#17–20) |
-| Mohamed Salah | Platforms & Competitors Tableau dashboards (#13–16) |

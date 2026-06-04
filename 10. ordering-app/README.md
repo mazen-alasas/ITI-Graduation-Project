@@ -1,7 +1,7 @@
 # FoodFlow — Customer Ordering App
 
 Part of the **Restaurant Delivery Profitability & Competitor Intelligence System**
-ITI Graduation Project 2025
+ITI Graduation Project 2026
 
 ---
 
